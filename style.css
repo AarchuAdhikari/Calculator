@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-size: 1.1rem;
+}
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  min-height: 100vh;
+  background: linear-gradient(235.3deg, #f0c5f8 -1.45%, #3d5ed2 100.45%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  background: rgba(220, 90, 216, 0.228);
+  width: 450px;
+  color: white;
+  padding: 2rem 1.5rem;
+  border-radius: 5px;
+  position: relative;
+
+  display: grid;
+  gap: 1rem;
+  /* z-index: -1; */
+  grid-template-areas:
+    "display display display display"
+    "ac c perc divide"
+    "btn7 btn8 btn9 btnx"
+    "btn4 btn5 btn6 minus"
+    "btn1 btn2 btn3 plus"
+    "btn0 btn0 dot equals";
+}
+.calculator div {
+  height: 50px;
+  /* width: 50px; */
+  background: rgb(138, 84, 0.54);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calculator div.display {
+  grid-area: display;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+.btn-ac {
+  grid-area: ac;
+}
+.btn-c {
+  grid-area: c;
+}
+.btn-perc {
+  grid-area: perc;
+}
+.btn-div {
+  grid-area: divide;
+}
+.btn-7 {
+  grid-area: btn7;
+}
+.btn-8 {
+  grid-area: btn8;
+}
+.btn-9 {
+  grid-area: btn9;
+}
+.btn-x {
+  grid-area: btnx;
+}
+.btn-4 {
+  grid-area: btn4;
+}
+.btn-5 {
+  grid-area: btn5;
+}
+.btn-6 {
+  grid-area: btn6;
+}
+.btn-minus {
+  grid-area: minus;
+}
+.btn-1 {
+  grid-area: btn1;
+}
+.btn-2 {
+  grid-area: btn2;
+}
+.btn-3 {
+  grid-area: btn3;
+}
+.btn-plus {
+  grid-area: plus;
+}
+.btn-0 {
+  grid-area: btn0;
+}
+.btn-dot {
+  grid-area: dot;
+}
+.btn-equal {
+  grid-area: equals;
+}
+.round {
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(rgba(243, 7, 7, 0.806), rgba(255, 255, 0, 0.205));
+  border-radius: 50%;
+  position: relative;
+  left: 30px;
+  top: 210px;
+
+  backdrop-filter: blur(10);
+}
